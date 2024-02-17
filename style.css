@@ -178,6 +178,21 @@ header .menu{
 }
 
 @media screen and (max-width:650px){
+    header{
+        font-size: 10px;
+    }
+    .slider{
+        margin-top: 80px;
+    }
+    .slider .list .item{
+        height: 100%;
+        width: 100%;
+    }
+    .slider .list .item img{
+        height: 200px;
+        width:90% ; 
+        margin-left: 5%;
+    }
     .thumbnail{
         justify-content: start;
         top:80% ;  
@@ -193,7 +208,16 @@ header .menu{
     .slider .list .item .content p{
         font-size: 10px ; 
     }
-    .arrows{
-        top:10% ; 
+    .slider .list .item .bk{
+        position: absolute;
+        width:90% ; 
+        height: 200px;
+        margin-left:5% ;
+        z-index:100;
+        top:30px ;
+        background-image: linear-gradient( to top ,black 5% , transparent );
+    }
+    body::-webkit-scrollbar{  /** Very Important **/ 
+        width: 0;
     }
 }
